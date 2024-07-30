@@ -1,9 +1,24 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, FastAPI
 from models.blog import BlogModels
 from config.config import blogs_collection
 from serializers.blog import DecodeBlogs, DecodeBlog
 import datetime
 from bson import ObjectId
+
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+origins = ['null']  # NOT recommended - see details below
+          
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 blog_root = APIRouter()
 

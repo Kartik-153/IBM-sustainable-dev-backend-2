@@ -7,4 +7,5 @@ class BlogModels(BaseModel):
     username : str
     tags : list
 
-    
+class EnduserModel(BaseModel):
+    pass
