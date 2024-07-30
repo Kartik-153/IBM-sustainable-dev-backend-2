@@ -6,6 +6,7 @@ class BlogModels(BaseModel):
     content : str
     username : str
     tags : list
+    image_url: str
 
 class EnduserModel(BaseModel):
     pass

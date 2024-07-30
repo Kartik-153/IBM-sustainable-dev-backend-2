@@ -7,7 +7,8 @@ def DecodeBlog(doc) -> dict:
         "sub_heading": doc["sub_heading"],
         "author": doc["username"],
         "content": doc["content"],
-        "date": doc["date"]
+        "date": doc["date"],
+        "image": doc["image_url"]
     }
 
 # all blogs
