@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-origins = ['null']  # NOT recommended - see details below
+origins = ['null']  
           
 app.add_middleware(
     CORSMiddleware,
