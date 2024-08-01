@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 entry_root = APIRouter()
 
-# endpoint
+# endpoint of the api
 @entry_root.get("/")
 def apiRunning():
     res = {
